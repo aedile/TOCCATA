@@ -1,0 +1,8 @@
+[mapping:emu]
+archive: libemu.a
+entries:
+    gyruss (noflash)
+    gyruss_video (noflash)
+    ay8910 (noflash)
+    e6809 (noflash)
+    Z80 (noflash)

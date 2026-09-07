@@ -1,0 +1,35 @@
+TOCCATA's own code is released under the Zero-Clause BSD license (0BSD): no
+attribution, no notice preservation, no conditions.
+
+That covers everything under main/, host/, tools/, components/audio_hal,
+components/display, components/imu, components/medal_input, and the files
+core/gyruss.c, core/gyruss.h, core/gyruss_internal.h, core/gyruss_video.c,
+core/ay8910.c, core/ay8910.h and core/mcs48.h.
+
+Two things carry their own licences, and one of them is contagious:
+
+  * core/e6809.c and core/e6809.h are the 6809 CPU core from vecx, which is
+    GPL-3.0. Because a build of this project links that core in, the combined
+    firmware and host harness must be distributed under the terms of the
+    GPL-3.0 as well. Replace that one file with a permissively licensed 6809
+    and the whole project is 0BSD.
+  * core/z80/ is Marat Fayzullin's Z80 emulator, which its author licenses for
+    non-commercial use only.
+
+Neither covers the game ROMs, which are not distributed here and never will be.
+See THIRD_PARTY_NOTICES.md.
+
+---
+
+Copyright (C) 2026 Jesse Castro
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
